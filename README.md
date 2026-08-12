@@ -153,50 +153,8 @@
 ### 1️⃣ 위치 기반 추억 지도 (Map View)
 > 지도 위 이동 동선(대시 경로)과 순서별 폴라로이드 핀 마커, 사진 업로드 시 EXIF 메타데이터 위치 자동 추출을 지원합니다.
 
-```svg
-<svg viewBox="0 0 800 240" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg" style="border-radius: 12px; font-family: system-ui, sans-serif;">
-  <rect width="800" height="240" rx="12" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5" />
-  
-  <!-- Map Lines -->
-  <path d="M 50 120 Q 200 40 400 140 T 750 100" stroke="#f43f5e" stroke-width="3" stroke-dasharray="6,6" fill="none" />
-  
-  <!-- Marker 1 -->
-  <g transform="translate(160, 40)">
-    <rect width="60" height="70" rx="8" fill="#ffffff" stroke="#f43f5e" stroke-width="2" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.1))" />
-    <rect x="5" y="5" width="50" height="45" rx="5" fill="#fbcfe8" />
-    <text x="20" y="33" font-size="20">🌸</text>
-    <circle cx="50" cy="5" r="10" fill="#f43f5e" />
-    <text x="47" y="9" font-size="10" fill="#fff" font-weight="bold">1</text>
-    <text x="-5" y="85" font-size="11" font-weight="bold" fill="#be123c">여의도 벚꽃축제</text>
-  </g>
+![Uploading image.png…]()
 
-  <!-- Marker 2 -->
-  <g transform="translate(380, 110)">
-    <rect width="60" height="70" rx="8" fill="#ffffff" stroke="#f43f5e" stroke-width="2" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.1))" />
-    <rect x="5" y="5" width="50" height="45" rx="5" fill="#bae6fd" />
-    <text x="20" y="33" font-size="20">🏖️</text>
-    <circle cx="50" cy="5" r="10" fill="#f43f5e" />
-    <text x="47" y="9" font-size="10" fill="#fff" font-weight="bold">2</text>
-    <text x="5" y="85" font-size="11" font-weight="bold" fill="#be123c">속초 해변 데이트</text>
-  </g>
-
-  <!-- Marker 3 -->
-  <g transform="translate(620, 70)">
-    <rect width="60" height="70" rx="8" fill="#ffffff" stroke="#f43f5e" stroke-width="2" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.1))" />
-    <rect x="5" y="5" width="50" height="45" rx="5" fill="#fef08a" />
-    <text x="20" y="33" font-size="20">🥐</text>
-    <circle cx="50" cy="5" r="10" fill="#f43f5e" />
-    <text x="47" y="9" font-size="10" fill="#fff" font-weight="bold">3</text>
-    <text x="5" y="85" font-size="11" font-weight="bold" fill="#be123c">성수동 베이커리</text>
-  </g>
-
-  <!-- EXIF Auto Detect Pill Badge -->
-  <g transform="translate(20, 180)">
-    <rect width="250" height="40" rx="20" fill="#ffffff" stroke="#fecdd3" stroke-width="1.5" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.05))" />
-    <text x="15" y="25" font-size="12" font-weight="bold" fill="#e11d48">📸 EXIF 자동 감지: 37.5665 N, 126.9780 E</text>
-  </g>
-</svg>
-```
 
 <br />
 
