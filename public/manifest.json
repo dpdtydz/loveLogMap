@@ -1,0 +1,24 @@
+{
+  "name": "우리발자국 - 커플 오붓 추억 지도",
+  "short_name": "우리발자국",
+  "description": "커플을 위한 연동형 추억 지도 앨범, 타임라인 코멘터리 및 위치기반 공동 플래너 앱",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fdf7f5",
+  "theme_color": "#ff7e80",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

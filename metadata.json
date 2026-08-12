@@ -1,0 +1,10 @@
+{
+  "name": "우리발자국",
+  "description": "커플을 위한 연동형 추억 지도 앨범, 타임라인 코멘터리 및 위치기반 공동 플래너 앱",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

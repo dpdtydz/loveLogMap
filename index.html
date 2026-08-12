@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>우리발자국</title>
+    
+    <!-- PWA configuration link feeds -->
+    <link rel="manifest" href="/manifest.json?v=5" />
+    <meta name="theme-color" content="#ff7e80" />
+    
+    <!-- iOS / Safari Web App Meta Tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="우리발자국" />
+    <link rel="apple-touch-icon" href="/icon.png?v=5" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- Simple self-contained service worker registration helper -->
+    <script>
+      // Clear old caches to ensure the new icon and name are fetched immediately
+      if ('caches' in window) {
+        caches.keys().then((names) => {
+          for (let name of names) {
+            caches.delete(name);
+          }
+        });
+      }
+
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js?v=5')
+            .then(reg => {
+              console.log('ServiceWorker registered with v=5:', reg.scope);
+              // Force update to fetch the latest sw.js file immediately if there's any change
+              reg.update();
+            })
+            .catch(err => console.error('ServiceWorker registration failed:', err));
+        });
+      }
+    </script>
+  </body>
+</html>
+
